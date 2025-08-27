@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Water Test</title>
-  <script src="server_waterloo.js"></script>
+  <title>Waterloo Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #myBox {
+      width: 200px;
+      height: 100px;
+      background: lightblue;
+      opacity: 1;
+      margin-top: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <button id="myBTN">Click Me!</button>
 
+  <h1>✅ Waterloo Test</h1>
+
+  <button id="myBtn">Click Me</button>
+  <input id="myInput" placeholder="Type something...">
+  <p id="myText">Initial text</p>
+  <div id="myBox">Box</div>
+
+  <!-- External Waterloo Script -->
   <script type="water" src="app.water"></script>
+
+  <!-- Waterloo Runtime -->
+  <script src="server_waterloo.js"></script>
+
 </body>
 </html>
