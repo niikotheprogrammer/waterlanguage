@@ -1,0 +1,6 @@
+call "Hello from app.water file!"
+
+button action {myBTN} {
+  call "You clicked the button!"
+  call "This is the second line!"
+}
