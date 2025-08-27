@@ -1,6 +1,20 @@
-call "Hello from app.water file!"
+call Hello from Waterloo!
 
-button action {myBTN} {
-  call "You clicked the button!"
-  call "This is the second line!"
+save btn = element myBtn
+save input = element myInput
+save txt = element myText
+save box = element myBox
+
+button action btn {
+  call You clicked the button!
+  setText txt = "Button was clicked!"
+  fadeOut {box} {1000}
+  wait 500
+  fadeIn {box} {1000}
+}
+
+input action input {
+  if input.value == "hi" then (
+    setText txt = "You typed hi!"
+  )
 }
