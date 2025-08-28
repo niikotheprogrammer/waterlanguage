@@ -2,38 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Waterloo Test</title>
+  <title>Waterloo Full Test</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    #myBox {
-      width: 200px;
-      height: 100px;
-      background: lightblue;
-      opacity: 1;
-      margin-top: 20px;
-      text-align: center;
-      line-height: 100px;
-      font-weight: bold;
-    }
+    body { font-family: Arial; text-align:center; padding:50px; }
+    #btnClick { padding:12px 24px; font-size:16px; cursor:pointer; margin:10px; }
+    #inputText { padding:8px; font-size:14px; margin-top:10px; }
+    #textDisplay { margin-top:20px; font-weight:bold; }
+    #box { width:100px; height:100px; background:lightgreen; margin:20px auto; opacity:0; line-height:100px; }
   </style>
 </head>
 <body>
+  <h1>💧 Waterloo Full Test</h1>
 
-  <h1>✅ Waterloo Test</h1>
+  <input id="inputText" placeholder="Type something...">
+  <button id="btnClick">Click Me!</button>
+  <p id="textDisplay">Initial text</p>
+  <div id="box">Box</div>
 
-  <button id="myBtn">Click Me</button>
-  <input id="myInput" placeholder="Type something...">
-  <p id="myText">Initial text</p>
-  <div id="myBox">Box</div>
-
-  <!-- External Waterloo Script -->
-  <script type="water" src="app.water"></script>
-
-  <!-- Waterloo Runtime -->
+  <!-- Waterloo runtime -->
   <script src="server_waterloo.js"></script>
-
 </body>
 </html>
