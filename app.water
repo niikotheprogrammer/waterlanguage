@@ -1,13 +1,13 @@
 call Hello from Waterloo!
 
-save btn = element myBtn
-save input = element myInput
-save txt = element myText
-save box = element myBox
+save btn = element btnClick
+save input = element inputText
+save txt = element textDisplay
+save box = element box
 
 button action btn {
-  call You clicked the button!
-  setText txt = "Button was clicked!"
+  call Button clicked!
+  setText txt = "You typed: " + input.value
   fadeOut {box} {1000}
   wait 500
   fadeIn {box} {1000}
