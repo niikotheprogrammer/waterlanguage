@@ -64,8 +64,7 @@ function runWaterScript(scriptEl) {
       const m = cmd.match(/wait (\d+)/);
       if (m) {
         const ms = parseInt(m[1]);
-        const start = Date.now();
-        while (Date.now() - start < ms) {}
+        setTimeout(() => {}, ms); // non-blocking
       }
     } else if (cmd.startsWith("if ")) {
       const m = cmd.match(/if (.*) == "(.*)" then \((.*)\)/);
